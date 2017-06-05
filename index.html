@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>World Elections</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap 3.3.7-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--Bootstrap Theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- FontAwesome -->
+<script src="https://use.fontawesome.com/7c0e795984.js"></script>
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- EasyAutoComplete.js -->
+<script src="JS/jquery.easy-autocomplete.min.js"></script>
+
+<script src="JS/app.js"></script>
+
+<!--My Style Sheet -->
+<link rel="stylesheet" href="CSS/index.css">
+
+<!-- Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+</head>
+
+
+<body>
+<!-- FOOTER WRAP -->
+  <div id="wrap">
+<!-- NAVIGATION -->
+  <div class="navbar navbar-custom navbar-fixed-top" role="navigation" id="NavBar">
+    <div class="container-fluid no-padding">
+      <div class="container-fluid" id="NavContainer">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">www.elect.world</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden"><a href="#page-top"></a></li>
+            <li>
+              <a class="page-scroll" href="#Markets">REGIONS</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#Data">DATA</a>
+            </li>
+            <li>
+              <a class="page-scroll" data-toggle="modal" data-target="#JamesMadison">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div><!--- NavContainer -->
+    </div>
+  </div>
+      <!--<div class="container-fluid">
+          <script src="http://widgets.macroaxis.com/widgets/url.jsp?t=42"></script>
+      </div>-->
+  <div id="NewsPanelContainer">
+    <div id="NewsPanel">
+      <!--<h1>May 27, 2017</h1> -->
+      <div id="NewsUpdate">
+        <div id="NewsP">
+          <p id="NewsPToggle"><span> May 27, 2017 -- Theresa May's Conservative Party Seeks to Maintain Power on June 8th Election</span></p>
+        </div>
+      </div>
+      <div id="SubHeadlines">
+          <ul id="SubHeadList">
+            <li><span>French National Assembly: Who Governs With Macron?</span><br>Voting Day - 06/11/17</li>
+            <li><span>U.S. Republican Wins Special Election</span><br>to House of Representatives After Physical Altercation With Reporter </li>
+            <li><span>Mongolia Presidential Election</span><br>on June 26th -- The 3 Candidates</li>
+            <li><span>Congolese National Assembly - 7/31/17</span><br>Where It's At and Predictions</li>
+          </ul>
+      </div>
+      <div id="TwitterNav">
+        <div class="TwitterRow">
+          <div class="TwitterColumn">
+              <div id="OurTwitter" class="twitter-nav-span">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Our&nbsp <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+              </div>
+              <div id="NewsAgency" class="twitter-nav-span">
+                Outside News <i class="fa fa-twitter" aria-hidden="true"></i>
+              </div>
+              <div class="glyphicon glyphicon-remove-circle" id="Remove"></div>
+          </div>
+        </div>
+      </div>
+
+<!-- TWEET NAV -->
+      <div class="container" id="OurTweets">
+        <div id="OurTweetsContainer">
+          <div class="row">
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Moon Jae-In Poised for Leadership After Winning South Korea&#39;s Presidential Election.</p>&mdash; elect.world (@ElectWorldFeed) <a href="https://twitter.com/ElectWorldFeed/status/863938503855493120">May 15, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Theresa May seeks to consolidate power in June 8th election.</p>&mdash; elect.world (@ElectWorldFeed) <a href="https://twitter.com/ElectWorldFeed/status/863937844724760576">May 15, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Macron defeats Le Pen, with 60 percent of voters picking the safer &quot;centrist&quot; over the right-wing madame. <a href="https://twitter.com/hashtag/frenchelection?src=hash">#frenchelection</a></p>&mdash; elect.world (@ElectWorldFeed) <a href="https://twitter.com/ElectWorldFeed/status/863940064308588544">May 15, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ^^^  TWEET TOGGLE -->
+      <div class="container" id="NewsTweets">
+        <div id="NewsTweetsContainer">
+          <div class="row">
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Where Emmanuel Macron’s support came from <a href="https://t.co/MWPbgEK09Q">https://t.co/MWPbgEK09Q</a></p>&mdash; The Economist (@TheEconomist) <a href="https://twitter.com/TheEconomist/status/862819281700040707">May 11, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">French election: Macron &#39;defeats Le Pen to become president&#39; <a href="https://t.co/2AkM3WzGig">https://t.co/2AkM3WzGig</a></p>&mdash; BBC News (World) (@BBCWorld) <a href="https://twitter.com/BBCWorld/status/861281279563759619">May 7, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Could this general election be the UK&#39;s most expensive? <a href="https://t.co/MzkK4LHZMj">https://t.co/MzkK4LHZMj</a></p>&mdash; BBC Politics (@BBCPolitics) <a href="https://twitter.com/BBCPolitics/status/863281179302219778">May 13, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Leaked draft of British Labour Party&#39;s election manifesto contains echoes of Bernie Sanders <a href="https://t.co/qMhi94BnhF">https://t.co/qMhi94BnhF</a> <a href="https://t.co/NJG8DKnOGd">pic.twitter.com/NJG8DKnOGd</a></p>&mdash; New York Times World (@nytimesworld) <a href="https://twitter.com/nytimesworld/status/862993032806895616">May 12, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="col-md-4">
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Analysis: South Korea just showed the world how to do democracy <a href="https://t.co/9n6bUvEwwM">https://t.co/9n6bUvEwwM</a></p>&mdash; Washington Post (@washingtonpost) <a href="https://twitter.com/washingtonpost/status/862265492173721600">May 10, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Congrats to Moon Jae-in on election victory in <a href="https://twitter.com/hashtag/ROK?src=hash">#ROK</a>- US remains fully committed to strong alliance btw our countries <a href="https://t.co/yW2M9Bhwrm">https://t.co/yW2M9Bhwrm</a></p>&mdash; John McCain (@SenJohnMcCain) <a href="https://twitter.com/SenJohnMcCain/status/862032623375405056">May 9, 2017</a></blockquote>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+        </div>
+      </div><!-- #NewsTweets -->
+
+      <div class="container" id="NewsArticle">
+          <div class="pre-scrollable container" id="NewsArticleContainer">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" id="NewsContent">
+                <h2 class="text-center">British Snap Elections - June 8th</h2>
+                <img class="pull-left img-rounded" src="IMG/TheresaMay.jpg" />
+                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                 It has survived not only five centuries, but also the leap into electronic typesetting,</p>
+                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                 <p>&nbsp;&nbsp;&nbsp;&nbsp;sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                 like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                 Why do we use it?
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;It is a long established fact that a reader will be distracted by the readable content
+                f a page when looking at its layout.</p> The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+                 making it look like readable English.
+                 <p>&nbsp;&nbsp;&nbsp;&nbsp;Many desktop publishing packages and web page editors
+                  now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover
+                  many web sites still in their infancy.</p>
+                <p>Various versions have evolved over the years,
+                   sometimes by accident, sometimes on purpose (injected humour and the like).
+                Where does it come from?</p>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <p> Richard McClintock,
+                 a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                 consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+                 discovered the undoubtable source.</p>
+                 <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
+                 "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+                  <p>This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+                  The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+              </div>
+            </div>
+          </div> <!-- .row -->
+      </div> <!-- .NewsArticleContainer -->
+    </div>
+  </div>
+
+ <!-- .navbar -->
+<!--////////////COUNTRY SEARCH JUMBO///////
+///////////////////////////////////////////-->
+
+
+  <div class="jumbotronOne">
+    <div class="container-fluid" id="JumboOneCont">
+      <div class="container">
+        <h2 class="text-center">Country Search</h2>
+          <input type="text" class="form-control" id="countries" placeholder="Italy" name="countries">
+            <!--  <button type="submit" class="btn btn-default" id="Submit">Submit</button> -->
+         <!--//////REGIONS -->
+      </div>
+      <div class="container-fluid" id="RegionsContainer">
+        <h1 class="text-center" id="Geoh1">REGIONS</h1>
+        <ul class="nav nav-tabs">
+          <li><a class="nav-link" href="#africaTab" data-toggle="tab" id="Africa"><span>&nbsp&nbsp&nbsp&nbspAfrica&nbsp&nbsp&nbsp&nbsp</span></a> </li>
+          <li><a class="nav-link" href="#asiaTab" data-toggle="tab" id="Asia"><span>&nbsp&nbsp&nbsp&nbsp&nbspAsia&nbsp&nbsp&nbsp&nbsp&nbsp</span></a></li>
+          <li><a class="nav-link" href="#midEastTab" data-toggle="tab" id="MiddleEast"><span>Middle East</span></a></li>
+          <li><a class="nav-link" href="#norAmerTab" data-toggle="tab" id="NorthAmerica"><span>North America</span></a></li>
+          <li><a class="nav-link" href="#oceanaTab" data-toggle="tab" id="Oceana"><span>Oceana</span></a></li>
+          <li><a class="nav-link" href="#souAmerTab" data-toggle="tab" id=""><span>Latin America</span></a></li>
+          <li><a class="nav-link" href="#westEurTab" data-toggle="tab"><span>Europe</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- "jumbotronOne"> -->
+<!--/////COUNTRY RESULTS -->
+<!--////////////////// REGIONS------------>
+
+
+    <div class="tab-content">
+      <div id="africaTab" class="tab-pane active">
+          <div class="Africa">
+          <h2 class="text-center">Africa</h2>
+                <ul id="AfricaList">
+                  <li><a href="#">Algeria</a></li>
+                  <li><a href="#">Angola</a></li>
+                  <li><a href="#">Benin</a></li>
+                  <li><a href="#">Botswana</a></li>
+                  <li><a href="#">Burkina Faso</a></li>
+                  <li><a href="#">Burundi</a></li>
+                  <li><a href="#">Cameroon</a></li>
+                  <li><a href="#">Cape Verde</a></li>
+                  <li><a href="#">Central African Republic</a></li>
+                  <li><a href="#">Chad</a></li>
+                  <li><a href="#">Democratic Republic of Congo</a></li>
+                  <li><a href="#">Republic of Congo</a></li>
+                  <li><a href="#">Cote d'Ivoire</a></li>
+                  <li><a href="#">Djibouti</a></li>
+                  <li><a href="#">Egypt</a></li>
+                  <li><a href="#">Equatorial Guinea</a></li>
+                  <li><a href="#">Eritrea</a></li>
+                  <li><a href="#">Ethiopia</a></li>
+                  <li><a href="#">Gabon</a></li>
+                  <li><a href="#">Gambia</a></li>
+                  <li><a href="#">Ghana</a></li>
+                  <li><a href="#">Guinea</a></li>
+                  <li><a href="#">Guinea Bissau</a></li>
+                  <li><a href="#">Kenya</a></li>
+                  <li><a href="#">Lesotho</a></li>
+                  <li><a href="#">Liberia</a></li>
+                  <li><a href="#">Libya</a></li>
+                  <li><a href="#">Madagascar</a></li>
+                  <li><a href="#">Malawi</a></li>
+                  <li><a href="#">Mali</a></li>
+                  <li><a href="#">Mauritania</a></li>
+                  <li><a href="#">Mauritius</a></li>
+                  <li><a href="#">Morocco</a></li>
+                  <li><a href="#">Mozambique</a></li>
+                  <li><a href="#">Namibia</a></li>
+                  <li><a href="#">Niger</a></li>
+                  <li><a href="#">Nigeria</a></li>
+                  <li><a href="#">Reunion</a></li>
+                  <li><a href="#">Rwanda</a></li>
+                  <li><a href="#">Sao Tome and Principe</a></li>
+                  <li><a href="#">Senegal</a></li>
+                  <li><a href="#">Seychelles</a></li>
+                  <li><a href="#">Sierra Leone</a></li>
+                  <li><a href="#">Somalia</a></li>
+                  <li><a href="#">South Africa</a></li>
+                  <li><a href="#">South Sudan</a></li>
+                  <li><a href="#">Sudan</a></li>
+                  <li><a href="#">Swaziland</a></li>
+                  <li><a href="#">Tanzania</a></li>
+                  <li><a href="#">Togo</a></li>
+                  <li><a href="#">Tunisia</a></li>
+                  <li><a href="#">Uganda</a></li>
+                  <li><a href="#">Zambia</a></li>
+                  <li><a href="#">Zimbabwe</a></li>
+                </ul>
+          </div>
+        </div>
+      <div id="asiaTab" class="tab-pane">
+        <h1>Asia</h1>
+      </div>
+      <div id="eastEurTab" class="tab-pane">
+        <h1></h1>
+      </div>
+      <div id="midEastTab" class="tab-pane">
+        <h1></h1>
+      </div>
+      <div id="norAmerTab" class="tab-pane">
+        <h1 class="civh1">North America</h1>
+      </div>
+      <div id="oceanaTab" class="tab-pane">
+        <h1></h1>
+      </div>
+      <div id="souAmerTab" class="tab-pane">
+        <h1></h1>
+      </div>
+      <div id="westEurTab" class="tab-pane">
+        <h1></h1>
+      </div>
+    </div>  <!-- TAB CONTENT -->
+
+  </div> <!-- #wrap -->
+  <div id="footer">
+    <div class="container">
+      <span><i class="fa fa-facebook-square" aria-hidden="true"></i></span>
+      <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+      <span><i class="fa fa-github" aria-hidden="true"></i></span>
+      <span><i class="fa fa-pied-piper-pp" aria-hidden="true"></i></span>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- /////// MODALS ////////////
+//////////////////////////////// -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" id="JamesMadison" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="container-fluid">
+        <div>
+          <br>
+          <br>
+          <br>
+          <p>"I believe there are more instances</p>
+          <p>of the abridgment</p>
+          <p>of the freedom </p>
+          <p>of the people<p>
+          <p>by gradual </p>
+          <p>and silent encroachments</p>
+          <p>of those in power</p>
+          <p>than by violent</p>
+          <p>and sudden usurpations"</p>
+          <br>
+          <p>-James Madison 6/6/1788</p>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+$(document).ready(function() {
+
+//Tweet Toggles
+  $('#NewsPToggle').click(function() {
+    if($('#OurTweets').css('display') == 'block') {
+      $('#OurTweets').toggle();
+    }
+    if($('#NewsTweets').css('display') == 'block') {
+      $('#NewsTweets').toggle();
+    }
+    $('#NewsArticleContainer').toggle();
+  });
+
+  $('#NewsAgency').click(function() {
+    if($('#OurTweets').css('display') == 'block') {
+      $('#OurTweets').toggle();
+    }
+    $('#NewsTweets').toggle();
+  });
+  $("#OurTwitter").click(function() {
+    if($('#NewsTweets').css('display') == 'block') {
+      $('#NewsTweets').toggle();
+    }
+    $("#OurTweets").toggle();
+    });
+////Cancel Circle /////
+////////////////////
+  $('.glyphicon-remove-circle').click(function() {
+    if($('#OurTweets').css('display') == 'block') {
+      $('#OurTweets').toggle();
+    }
+    if($('#NewsTweets').css('display') == 'block') {
+      $('#NewsTweets').toggle();
+    }
+    if($('#NewsArticleContainer').css('display') == 'block') {
+      $('#NewsArticleContainer').toggle()
+    }
+  });
+
+  $('#NewsPToggle').hover(
+      function() {
+      $('#NewsP').css({"color": "eee", "font-weight" : "bold"});
+    },
+      function() {
+      $('#NewsP').css({"color":"white", "font-weight": "normal"});
+    }
+  );
+
+  $('.nav-tabs > li').click(function() {
+  });
+////NewsPToggle
+///////////////
+});
+
+
+
+
+//  $(window).resize(adjust_body_offset);
+
+  //$(document).ready(adjust_body_offset);
+
+
+//
+//    $(document).ready(function() {
+  //    $.getJSON("DATA/Regions.json", function(data) {
+    //      var countries = '';
+      //    $.each(data, function(key, value) {
+        //    countries += '<li>' + value.name + '</li>'
+      //  });
+    //    $('#Table').append(countries);
+  //    });
+//    });
+
+
+    var options = {
+      url: "DATA/countries.json",
+      getValue: "name",
+
+      list: {
+        match: {
+        enabled: true
+        }
+      },
+      theme: "square"
+    };
+
+    $("#countries").easyAutocomplete(options);
+
+
+    </script>
+
+
+
+</body>
+
+</html>
